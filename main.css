@@ -1,0 +1,52 @@
+/*this code selects the nested paragraph (p) */
+/*
+.wrapper {
+    .main {
+        .container {
+            .article {
+                .post {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+*/
+/* this is to select the main div within the parent wrapper*/
+/* the ampersand sign (&) signifies that wrapper is teh parent of main*/
+.wrapper .main {
+  background-color: yellow;
+  width: 400px;
+  height: 400px; }
+
+/*here we select the Paragragh ... NOTICE how font is written ONCE! followed by font family, wieght etc...*/
+p {
+  font-family: open-sans;
+  font-size: 30px;
+  font-weight: 500;
+  /*here we select the text ... NOTICE how text is written ONCE! followed by align transform, etc...*/
+  text-align: center;
+  text-transform: uppercase; }
+
+/*here we select the text ... NOTICE how background is written ONCE! followed by size, repeat, etc...*/
+div {
+  /* The % denotes a PLACEHOLER*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+div {
+  /* Here we use @extend to extend the properties of the background */ }
+
+/* into the container, so when it is complied, container will have */
+/* have the properties too */
+.container {
+  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+
+.article {
+  background-image: url("https://dummyimage.com/450x250/000/fff"); }
+
+.post {
+  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
+
+/*# sourceMappingURL=main.css.map */
